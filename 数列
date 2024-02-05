@@ -15,18 +15,14 @@ Example Test Cases:
 1. fibonacci_sequence(10) should return the Fibonacci sequence up to 10.
 2. fibonacci_sequence(1) should return the Fibonacci sequence up to 1.
 3. fibonacci_sequence(0) should return a sequence with 0.
-4. fibonacci_sequence(-5) should handle negative input.def fibonacci_sequence(max_value):
-    # Handle edge case for negative inputs
+4. fibonacci_sequence(-5) should handle negative input.
+
+def fibonacci_sequence(max_value):
     if max_value < 0:
         return "Fibonacci sequence not defined for negative numbers."
-
-    # Initialize the first two Fibonacci numbers and the sequence
     a, b = 0, 1
     sequence = []
-
-    # Generate the Fibonacci sequence up to max_value
     while a <= max_value:
         sequence.append(a)
         a, b = b, a + b
-
     return sequence
